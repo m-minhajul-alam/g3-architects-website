@@ -123,10 +123,11 @@ main {
     width: 35vh;
     border-radius: 8px
 }
-.feature-banner-title{
-padding-bottom: 15px;
-font-size: 2rem;
-font-weight: 700;
+
+.feature-banner-title {
+    padding-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 #quick-list {
@@ -150,17 +151,21 @@ font-weight: 700;
 
 /* recponsive for small device style start*/
 @media screen and (max-width: 576px) {
-    .btn-promery {
+    .btn-primary {
         font-size: 0.8rem;
         padding: 9px 12px;
     }
-
 
     header {
         padding: 10px 10px;
     }
 
-    nav {
+    main {
+        margin: 50px 10px 100px 10px;
+    }
+
+    nav,
+    .feature-banner-container {
         flex-direction: column-reverse;
     }
 
@@ -177,14 +182,41 @@ font-weight: 700;
         font-size: 3rem;
     }
 
+    .feature-banner-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature-banner-image {
+        width: 100%;
+    }
+
+    .feature-banner-info {
+        text-align: center;
+    }
+}
+
 
 
     /* recponsive for mediam device style start*/
+
     @media screen and (min-width: 576px) and (max-width: 992px) {
+        .btn-primary {
+            font-size: 1rem;
+            padding: 12px 16px;
+        }
 
         header {
             padding: 20px 30px;
         }
 
+        main {
+            margin: 50px 50px 100px 50px;
+        }
 
+        .feature-banner-container {
+            flex-direction: column-reverse;
+        }
+        .feature-banner-info {
+            text-align: center;
+        }
     }
