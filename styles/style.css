@@ -24,6 +24,13 @@
     background-color: #FFF;
 }
 
+.title-primary-one {
+    color: #131313;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
 .description-paimary {
     color: #727272;
     font-size: 1rem;
@@ -111,6 +118,7 @@ main {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    margin-bottom: 80px;
 }
 
 .feature-banner-images {
@@ -146,6 +154,22 @@ main {
 
 /* feature banner style end */
 
+/* feature style start */
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+
+}
+
+.architect-img {
+    width: 35vw;
+    border-radius: 8px;
+}
+
+
+
+/* feature style end */
 
 
 
@@ -197,26 +221,27 @@ main {
 
 
 
-    /* recponsive for mediam device style start*/
+/* recponsive for mediam device style start*/
 
-    @media screen and (min-width: 576px) and (max-width: 992px) {
-        .btn-primary {
-            font-size: 1rem;
-            padding: 12px 16px;
-        }
-
-        header {
-            padding: 20px 30px;
-        }
-
-        main {
-            margin: 50px 50px 100px 50px;
-        }
-
-        .feature-banner-container {
-            flex-direction: column-reverse;
-        }
-        .feature-banner-info {
-            text-align: center;
-        }
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .btn-primary {
+        font-size: 1rem;
+        padding: 12px 16px;
     }
+
+    header {
+        padding: 20px 30px;
+    }
+
+    main {
+        margin: 50px 50px 100px 50px;
+    }
+
+    .feature-banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .feature-banner-info {
+        text-align: center;
+    }
+}
